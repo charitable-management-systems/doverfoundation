@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: '/doverfoundation',
   siteMetadata: {
     title: `dover`,
     siteUrl: `https://www.yourdomain.tld`

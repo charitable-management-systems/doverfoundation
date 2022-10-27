@@ -5,7 +5,10 @@ export type Breakpoint = 'small' | 'medium' | 'large';
 const Context = React.createContext<Breakpoint>('large');
 
 export default ({ children }: React.ProviderProps<Breakpoint>) => {
+  const isBrowser = typeof window !== "undefined";
   const determineBreakpoint = () => {
+    if (!isBrowser) return 'large';
+
     if (window.innerWidth > 900) {
       return 'large';
     }

@@ -34,37 +34,37 @@ const navItems = [
     },
     {
         title: 'Renewal Process',
-        url: '',
+        url: '/renewalProcess',
     },
     {
         title: 'News',
-        url: '',
+        url: '/news',
         items: [
             {
                 title: 'Awardees',
-                url: '',
+                url: '/news#awardees',
             },
             {
                 title: 'Colleges Attended',
-                url: '',
+                url: '/news#collegesAttended',
             },
             {
                 title: 'Majors',
-                url: '',
+                url: '/news#recentMajors',
             },
             {
                 title: 'Press Releases',
-                url: '',
+                url: '/news#pressReleases',
             }
         ]
     },
     {
         title: 'Apply',
-        url: '',
+        url: 'https://application.doverfoundation.org/application/login',
         items: [
             {
                 title: 'Application',
-                url: '',
+                url: 'https://application.doverfoundation.org/application/login',
             },
             {
                 title: 'Employee Verification Form',
@@ -95,7 +95,9 @@ const StyledMenu = styled(Menu)`
 
 const NavLinks = styled.div`
   display: flex;
-  marign-left: auto;
+  marign-right: auto;
+  max-width: 600px;
+  padding-right: 32px;
   flex-grow: 1;
   justify-content: space-around;  
 `
@@ -112,6 +114,7 @@ const Container = styled.div`
   z-index: 300;
   border-bottom: 1px solid rgba(155,155,155,0.1);
   box-shadow: 0px 0px 10px rgba(155,155,155,0.2);
+  justify-content: space-around;
 `
 
 const SubNav = styled.div<{ $show: boolean }>`
@@ -200,11 +203,11 @@ const MobileHeader = () => {
                 <MobileNavList>
                     {navItems.map(navItem => (
                         <MobileNavListItem>
-                            <a href={navItem.url}>{navItem.title}</a>
+                            <Link to={navItem.url}>{navItem.title}</Link>
                             {navItem.items && (
                                 <MobileNavList>
                                     {navItem.items.map(subItem => (
-                                        <li><a href={subItem.url}>{subItem.title}</a></li>
+                                        <li><Link to={subItem.url}>{subItem.title}</Link></li>
                                     ))}
                                 </MobileNavList>
                             )}
