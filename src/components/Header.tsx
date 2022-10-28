@@ -138,11 +138,11 @@ const NavLink = ({title, url, subNav }: any) => {
     return (
         <div onMouseOver={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} >
             <div >
-                <a href={url}>{title}</a>
+                <Link to={url}>{title}</Link>
             </div>
             <SubNav $show={subNav != null && isHovering}>
                 {subNav?.map(({ title, url }) => (
-                    <SubNavLink><a href={url}>{title}</a></SubNavLink>
+                    <SubNavLink><Link to={url}>{title}</Link></SubNavLink>
                 ))}
             </SubNav>
         </div>

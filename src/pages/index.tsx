@@ -93,31 +93,37 @@ const IndexPage = () => {
               </Link>
             </Section>
             <Section>
-              <StaticImage
-                src="../images/renewalProcess.jpeg"
-                alt="people celebrating around a meeting table"
-                layout="fullWidth"
-                objectFit="contain"
-              />
-              <SectionText>Renewal Process</SectionText>
+              <Link to="/renewalProcess">
+                <StaticImage
+                  src="../images/renewalProcess.jpeg"
+                  alt="people celebrating around a meeting table"
+                  layout="fullWidth"
+                  objectFit="contain"
+                />
+                <SectionText>Renewal Process</SectionText>
+              </Link>
             </Section>
             <Section>
-              <StaticImage
-                src="../images/scholarshipNews.jpeg"
-                alt="people celebrating around a meeting table"
-                layout="fullWidth"
-                objectFit="contain"
-              />
-              <SectionText>Scholarship News</SectionText>
+              <Link to="/news">
+                <StaticImage
+                  src="../images/scholarshipNews.jpeg"
+                  alt="people celebrating around a meeting table"
+                  layout="fullWidth"
+                  objectFit="contain"
+                />
+                <SectionText>Scholarship News</SectionText>
+              </Link>
             </Section>
             <Section>
-              <StaticImage
-                src="../images/About.jpeg"
-                alt="people celebrating around a meeting table"
-                layout="fullWidth"
-                objectFit="contain"
-              />
-              <SectionText>About the Dover Foundation</SectionText>
+              <Link to="/about">
+                <StaticImage
+                  src="../images/About.jpeg"
+                  alt="people celebrating around a meeting table"
+                  layout="fullWidth"
+                  objectFit="contain"
+                />
+                <SectionText>About the Dover Foundation</SectionText>
+              </Link>
             </Section>
           </Sections>
         </Main>
