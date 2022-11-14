@@ -5,6 +5,11 @@ import { Header } from "../components/Header"
 import { Main } from "../components/Main"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
+import "../styles/reset.css"
+import "../styles/index.css"
+import Footer from "../components/Footer"
+import { Anchor } from "../components/Anchor"
+import Section from "../components/Section"
 
 
 const HeroText = styled.div`
@@ -30,20 +35,6 @@ const Hero = styled.div`
   position: relative;
 `
 
-const Section = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: calc(100% - 34px);
-  box-shadow: 0px 0px 10px rgba(155,155,155,0.2);
-  border: 1px solid rgba(155,155,155,0.22);
-  padding: 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-`
-
 const programInformation = () => {
     return (
         <BreakpointProvider value={'large'}>
@@ -53,12 +44,11 @@ const programInformation = () => {
                     <StaticImage
                         src="../images/programInformation.jpeg"
                         alt="hero"
-                        aspectRatio={18 / 9}
-                        height={500}
+                        layout="fullWidth"
                     />
-                    <HeroText><h2>Program Information</h2></HeroText>
                 </Hero>
-                <Section id="eligibility">
+                <Anchor id="eligibility" />
+                <Section>
                     <h3>Eligibility</h3>
                     <ul>
                         <li>
@@ -66,7 +56,7 @@ const programInformation = () => {
                             operating companies world-wide on February 21, 2023 and who has worked for Dover for a least one year of continuous service in the
                             previous five years. Further:
                             <ul>
-                                <li>Employees and spouses of employees are not eligible</li>
+                                <li>Employees and spouses of employees are not eligible.</li>
                                 <li>Children of Dover Foundation's Board of Directors and/or participants in Dover Corporation's Long Term Incentive Program
                                     (LTIP) are also ineligible for this program.</li>
                             </ul>
@@ -84,10 +74,11 @@ const programInformation = () => {
                         <li> Eligible applicants must be 24 years of age or younger (exception for military duty) as of February 21, 2023.</li>
                     </ul>
                 </Section>
-                <Section id="rules">
+                <Anchor id="rules"/>
+                <Section>
                     <h3>Rules and Regulations</h3>
                     <ul>
-                        <li>Completing this application does not guarantee that you will receive the scholarship</li>
+                        <li>Completing this application does not guarantee that you will receive the scholarship.</li>
                         <li>Scholarships are for undergraduate studies only and will not extend beyond the year in which an undergraduate/baccalaureate degree is earned.</li>
                         <li>The Dover Scholars Program reserves the right to define undergraduate education as the first eight semesters of post-secondary education prior to earning a degree.</li>
                         <li>Awardees must be enrolled as full-time college students at an accredited/recognized institution for the fall of 2023 to receive a scholarship payment.</li>
@@ -96,7 +87,7 @@ const programInformation = () => {
                         <li>The funds provided must be used only for educational expenses (e.g., tuition, books and fees).</li>
                         <li>Scholarship payments will be disbursed each July, made payable to the school, and mailed or wired directly to the institution.</li>
 
-                        <li>It is the intent of the Dover Foundation to avoid granting a student financial aid in excess of educational expenses</li>
+                        <li>It is the intent of the Dover Foundation to avoid granting a student financial aid in excess of educational expenses.</li>
                         <li>Depending on your country's tax laws, financial aid in excess of actual educational expenses may result in taxable income to the recipient and possible reduction of other financial aid by their college.</li>
 
                         <li>Scholarship recipients are not required to accept employment with Dover Corporation or any of its affiliates upon graduation.</li>
@@ -106,7 +97,8 @@ const programInformation = () => {
                         <li>The Foundation may modify or discontinue the program at anytime.</li>
                     </ul>
                 </Section>
-                <Section id="selection">
+                <Anchor id="selection" />
+                <Section>
                     <h3>Selection Process</h3>
                     <ul>
                         <li>Selections are made by an impartial, outside committee comprised of college admissions professionals from prominent universities.</li>
@@ -116,9 +108,10 @@ const programInformation = () => {
                             to applicants pursing science, technology, engineering or mathematics (STEM) fields of study.</li>
                         <li>All scholarship winners will be individually notified by email of the committee's decision no later than April 28, 2023. Winners will be
                             posted on the website by May 5, 2023.</li>
+                            <Anchor  id="applicationProcess"/>
                     </ul>
                 </Section>
-                <Section id="applicationProcess">
+                <Section>
                     <h3>Application Process</h3>
                     <ul>
                         <li>The online application will be available beginning November 18, 2022 through February 21, 2023.</li>
@@ -126,16 +119,17 @@ const programInformation = () => {
                             A complete application, in English, must be submitted by February 21, 2023 and include:
                             <ul>
                                 <li>the online application</li>
-                                <li>employment verification form</li>
-                                <li>academic record form</li>
-                                <li>recommender form</li>
+                                <li><a href="../../doverfoundation/pdf/Employee_Verification_Form.pdf">employment verification form</a></li>
+                                <li><a href="../../doverfoundation/pdf/Academic_Record_Form.pdf">academic record form</a></li>
+                                <li><a href="../../doverfoundation/pdf/Reference_Form.pdf">reference form</a></li>
                             </ul>
                         </li>
                         <li>Instructions are provided on each form.</li>
                     </ul>
-                    <a href="">Apply Here</a>
-                </Section>
-                <Section id="contact">
+                    <a href="https://application.doverfoundation.org/application/login">Apply Here</a>
+                </Section>  
+                <Anchor  id="contact"/>
+                <Section>
                     <h3>Contact Us</h3>
                     <p>For program questions or technical support:<br/><br/>
                         info@doverfoundation.org<br/>
@@ -147,6 +141,7 @@ const programInformation = () => {
                     </p>
                 </Section>
             </Main>
+            <Footer />
         </BreakpointProvider>
     )
 }

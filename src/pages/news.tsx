@@ -5,6 +5,11 @@ import { Header } from "../components/Header"
 import { Main } from "../components/Main"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
+import { Anchor } from "../components/Anchor"
+import "../styles/reset.css"
+import "../styles/index.css"
+import Footer from "../components/Footer"
+import Section from "../components/Section"
 
 const nameSort = (a: string, b: string): number => {
     const aLastName = a.split(" ")[1];
@@ -583,20 +588,6 @@ const Hero = styled.div`
   position: relative;
 `
 
-const Section = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: calc(100% - 34px);
-  box-shadow: 0px 0px 10px rgba(155,155,155,0.2);
-  border: 1px solid rgba(155,155,155,0.22);
-  padding: 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-`
-
 const Grid = styled.div<{total: number}>`
     display: grid;
 	grid-auto-flow: column;
@@ -608,6 +599,10 @@ const Grid = styled.div<{total: number}>`
     }
 `
 
+const MarginedHeader = styled.h3`
+    margin-top: 56px;
+`
+
 const renewalProcess = () => {
     return (
         <BreakpointProvider value={'large'}>
@@ -617,12 +612,11 @@ const renewalProcess = () => {
                     <StaticImage
                         src="../images/scholarshipNews.jpeg"
                         alt="hero"
-                        aspectRatio={18 / 9}
-                        height={500}
+                        layout="fullWidth"
                     />
-                    <HeroText><h2>News</h2></HeroText>
                 </Hero>
-                <Section id="pressReleases">
+                <Anchor id="pressReleases"/>
+                <Section>
                     <h3>Press Releases</h3>
                     <p>
                         <a href="https://www.prnewswire.com/news-releases/dover-announces-the-2022-dover-scholarship-winners-and-expands-program-301535718.html?tc=eml_cleartime" target="_blank">
@@ -630,15 +624,17 @@ const renewalProcess = () => {
                         </a>
                     </p>
                 </Section>
+                <Anchor id="collegesAttended"/>
                 <Section>
                     <h2>Scholarship recipients are pursuing many different areas of study at a variety of schools around the world.</h2>
-                    <h3 id="collegesAttended">Recent Schools</h3>
+                    <MarginedHeader>Recent Schools</MarginedHeader>
                     <Grid total={schools.length}>
                         {schools.sort().map(school => (
                             <div>{school}</div>
                         ))}
                     </Grid>
-                    <h3 id="recentMajors">Recent Majors</h3>
+                    <Anchor id="recentMajors"/>
+                    <MarginedHeader>Recent Majors</MarginedHeader>
                     <Grid total={majors.length}>                    
                         {
                             majors.sort().map(major => (
@@ -646,7 +642,8 @@ const renewalProcess = () => {
                             ))
                         }
                     </Grid>
-                    <h3 id="awardees">Recent Awardees</h3>
+                    <Anchor id="awardees"/>
+                    <MarginedHeader>Recent Awardees</MarginedHeader>
                     {
                         awardees.map(({year, names}) => (
                             <>
@@ -661,6 +658,7 @@ const renewalProcess = () => {
                     }
                 </Section>
             </Main>
+            <Footer />
         </BreakpointProvider>
     )
 }

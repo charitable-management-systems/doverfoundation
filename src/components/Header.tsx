@@ -2,35 +2,22 @@ import { Link } from "gatsby"
 import * as React from "react"
 import styled from "styled-components"
 import Logo from "../assets/doverScholarsLogo.svg"
+import FoundationLogo from "../assets/doverFoundationLogo.svg"
 import Menu from "../assets/menu.svg"
 import { useBreakpointContext } from "../providers/BreakpointProvider"
 
 const navItems = [
     {
+        title: 'Home',
+        url: '/',
+    },
+    {
+        title: 'About Us',
+        url: '/about',
+    },
+    {
         title: 'Information',
         url: '/programInformation',
-        items: [
-            {
-                title: 'Eligibility',
-                url: '/programInformation#eligibility',
-            },
-            {
-                title: 'Rules and Regulations',
-                url: '/programInformation#rules',
-            },
-            {
-                title: 'Selection Process',
-                url: '/programInformation#selection',
-            },
-            {
-                title: 'Application Process',
-                url: '/programInformation#applicationProcess',
-            },
-            {
-                title: 'Contact Us',
-                url: '/programInformation#contact',
-            }
-        ]
     },
     {
         title: 'Renewal Process',
@@ -39,54 +26,33 @@ const navItems = [
     {
         title: 'News',
         url: '/news',
-        items: [
-            {
-                title: 'Awardees',
-                url: '/news#awardees',
-            },
-            {
-                title: 'Colleges Attended',
-                url: '/news#collegesAttended',
-            },
-            {
-                title: 'Majors',
-                url: '/news#recentMajors',
-            },
-            {
-                title: 'Press Releases',
-                url: '/news#pressReleases',
-            }
-        ]
     },
     {
         title: 'Apply',
-        url: 'https://application.doverfoundation.org/application/login',
-        items: [
-            {
-                title: 'Application',
-                url: 'https://application.doverfoundation.org/application/login',
-            },
-            {
-                title: 'Employee Verification Form',
-                url: '',
-            },
-            {
-                title: 'Academic Record Form',
-                url: '',
-            },
-            {
-                title: 'Recommender Form',
-                url: '',
-            }
-        ]
+        url: '/programInformation#applicationProcess',
     }
 ]
 
 const StyledLogo = styled(Logo)`
-  height: 44px;
-  width: 150px;
+  height: 60px;
+  width: 204px;
   display: flex;
   margin-right: auto;
+  @media (max-width: 420px) {
+    height: 44px;
+    width: 150px;
+  }
+`
+
+const StyledFoundationLogo = styled(FoundationLogo)`
+    display: flex;
+    height: 60px;
+    width: 204px;
+    margin-left: auto;
+    @media (max-width: 420px) {
+        height: 44px;
+        width: 150px;
+    }
 `
 
 const StyledMenu = styled(Menu)`
@@ -106,15 +72,17 @@ const Container = styled.div`
   position: sticky;
   display: flex;
   top: 0;
-  height: 48px;
+  height: 76px;
   padding: 8px;
-  gap: 32px;
   align-items: center;
   background-color: white;
   z-index: 300;
   border-bottom: 1px solid rgba(155,155,155,0.1);
   box-shadow: 0px 0px 10px rgba(155,155,155,0.2);
   justify-content: space-around;
+  @media (max-width: 420px) {
+        height:52px;
+    }
 `
 
 const SubNav = styled.div<{ $show: boolean }>`
@@ -133,17 +101,19 @@ const SubNavLink = styled.div`
 `;
 
 
-const NavLink = ({title, url, subNav }: any) => {
+const NavLink = ({ title, url, subNav }: any) => {
     const [isHovering, setIsHovering] = React.useState<boolean>(false);
     return (
         <div onMouseOver={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} >
             <div >
-                <Link to={url}>{title}</Link>
+                <StyledNavLink to={url}>{title}</StyledNavLink>
             </div>
             <SubNav $show={subNav != null && isHovering}>
-                {subNav?.map(({ title, url }) => (
-                    <SubNavLink><Link to={url}>{title}</Link></SubNavLink>
-                ))}
+                {subNav?.map(({ title, url, type }: any) =>
+                    type === 'pdf'
+                        ? (<SubNavLink><a href={url} target="_blank">{title}</a></SubNavLink>)
+                        : (<SubNavLink><Link to={url}>{title}</Link></SubNavLink>)
+                )}
             </SubNav>
         </div>
     )
@@ -166,7 +136,10 @@ const MobileNavMenu = styled.div<{ $show: boolean }>`
     transform: ${props => (props as any).$show ? 'translateX(0)' : 'translateX(216px);'},
 `
 
-const StyledNavLink = styled(NavLink)`
+const StyledNavLink = styled(Link)`
+    font-size: 18px;
+    color: rgb(0, 75, 141);
+    text-decoration: none;
 `
 
 const MobileNavList = styled.ul`
@@ -197,6 +170,7 @@ const MobileHeader = () => {
         <>
             <Container>
                 <Link to="/"><StyledLogo /></Link>
+                <Link to="/"><StyledFoundationLogo /></Link>
                 <StyledMenu onClick={() => setIsOpen(!isOpen)} />
             </Container>
             <MobileNavMenu $show={isOpen}>
@@ -206,9 +180,11 @@ const MobileHeader = () => {
                             <Link to={navItem.url}>{navItem.title}</Link>
                             {navItem.items && (
                                 <MobileNavList>
-                                    {navItem.items.map(subItem => (
-                                        <li><Link to={subItem.url}>{subItem.title}</Link></li>
-                                    ))}
+                                    {navItem.items.map(subItem =>
+                                        (subItem as any)?.type === 'pdf'
+                                            ? (<li><a href={subItem.url} target="_blank">{subItem.title}</a></li>)
+                                            : (<li><Link to={subItem.url}>{subItem.title}</Link></li>)
+                                    )}
                                 </MobileNavList>
                             )}
                         </MobileNavListItem>
@@ -229,9 +205,10 @@ const Header = () => {
             <Link to="/"><StyledLogo /></Link>
             <NavLinks>
                 {navItems.map(navItem => (
-                    <StyledNavLink title={navItem.title} url={navItem.url} subNav={navItem?.items} />
+                    <NavLink title={navItem.title} url={navItem.url} subNav={navItem?.items} />
                 ))}
             </NavLinks>
+            <Link to="/"><StyledFoundationLogo /></Link>
         </Container>
     );
 };
