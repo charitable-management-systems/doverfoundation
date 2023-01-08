@@ -53,7 +53,7 @@ const programInformation = () => {
                     <ul>
                         <li>
                             The applicant's parent, stepparent or legal guardian must be employed as a full-time employee of Dover Corporation, or one of its
-                            operating companies world-wide on February 21, 2023 and who has worked for Dover for a least one year of continuous service in the
+                            operating companies world-wide on February 21, 2023 and who has worked for Dover for at least one year of continuous service in the
                             previous five years. Further:
                             <ul>
                                 <li>Employees and spouses of employees are not eligible.</li>
@@ -105,7 +105,7 @@ const programInformation = () => {
                         <li>No representatives of Dover Corporation or The Dover Foundation are involved in the selection process.</li>
                         <li>No preference is accorded to an applicant by reason of a parent's position or length of employment.</li>
                         <li>Consideration for all awards is based on the applicant's academic record, activities and leadership abilities. Extra consideration is given
-                            to applicants pursing science, technology, engineering or mathematics (STEM) fields of study.</li>
+                            to applicants pursuing science, technology, engineering or mathematics (STEM) fields of study.</li>
                         <li>All scholarship winners will be individually notified by email of the committee's decision no later than April 28, 2023. Winners will be
                             posted on the website by May 5, 2023.</li>
                             <Anchor  id="applicationProcess"/>
@@ -119,9 +119,9 @@ const programInformation = () => {
                             A complete application, in English, must be submitted by February 21, 2023 and include:
                             <ul>
                                 <li>the online application</li>
-                                <li><a href="../../doverfoundation/pdf/Employee_Verification_Form.pdf">employment verification form</a></li>
-                                <li><a href="../../doverfoundation/pdf/Academic_Record_Form.pdf">academic record form</a></li>
-                                <li><a href="../../doverfoundation/pdf/Reference_Form.pdf">reference form</a></li>
+                                <li><a href="../../pdf/Employee_Verification_Form.pdf">employment verification form</a></li>
+                                <li><a href="../../pdf/Academic_Record_Form.pdf">academic record form</a></li>
+                                <li><a href="../../pdf/Reference_Form.pdf">reference form</a></li>
                             </ul>
                         </li>
                         <li>Instructions are provided on each form.</li>

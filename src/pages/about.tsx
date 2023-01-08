@@ -51,8 +51,9 @@ const renewalProcess = () => {
 
             <p>The Dover Foundation was established in 2011. The Foundation is tax exempt under Section 501 (c)(3) of the Internal Revenue Code. In addition to awarding scholarships to qualified children of Dover employees, contributions are made only to qualified organizations. Contributions are not made to: religious organizations for religious purposes; for any form of political activity; to non-qualified military veteran organizations, fraternal orders or labor groups; for loans of any kind; or for trips, tours, dinners, tickets or advertising. The Foundation does not have and is not able to donate equipment or products.</p>
             <h3>Public Disclosures and Forms</h3>
-            <a href="../../doverfoundation/pdf/Form990PF.pdf">Form 990PF</a><br/>
-            <a href="../../doverfoundation/pdf/Form1023ApplicationForRecognitionOfExemption.pdf">501(c)3 Letter</a>
+            <a href="../../pdf/Form990PF.pdf">Form 990PF</a><br/>
+            <a href="../../pdf/Form4720.pdf">Form 4720</a><br/>
+            <a href="../../pdf/Form1023ApplicationForRecognitionOfExemption.pdf">501(c)3 Letter</a>
         </Section>
       </Main>
       <Footer />
