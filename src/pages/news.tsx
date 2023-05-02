@@ -137,6 +137,41 @@ const schools = [
 
 const awardees = [
     {
+        year: 2023,
+        names: [
+            "Aaesha Alkhalili",
+            "Selvina Joseph",
+            "Ishita Patel",
+            "Lauren Ballinger",
+            "Aakansha Khosla",
+            "Jaden Paterson",
+            "Kiara Brown",
+            "Erine Kubinowski",
+            "Noah Peterson",
+            "Jacklyn Corl",
+            "Dylan Lee",
+            "Benjamin Rees-Inglis",
+            "Andrea Simona Diacinti",
+            "Natalie LeForge",
+            "Lillian Ryan",
+            "Timothy Dickinson",
+            "Spencer McAdams",
+            "Zoe Sackfield",
+            "Justin Gao",
+            "Gavin McMahon",
+            "Yash Singh",
+            "Harrison Hall",
+            "Katherine Mills",
+            "Minh Chan Tran",
+            "Tyson Hentges",
+            "Andrea Morris",
+            "Kris Xiong",
+            "Lydia Jang",
+            "Anthony Nguyen",
+            "Ilina Zavalova",
+        ]
+    },
+    {
         year: 2022,
         names: [
             "Rebecca Basclain",
