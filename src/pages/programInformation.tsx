@@ -57,8 +57,7 @@ const programInformation = () => {
                             previous five years. Further:
                             <ul>
                                 <li>Employees and spouses of employees are not eligible.</li>
-                                <li>Children of Dover Foundation's Board of Directors and/or participants in Dover Corporation's Long Term Incentive Program
-                                    (LTIP) are also ineligible for this program.</li>
+                                <li>Children of Dover Foundation's Board of Directors and/or those who are subject to Dover Share Ownership Guidelines are also ineligible for this program.</li>
                             </ul>
                         </li>
                         <li>

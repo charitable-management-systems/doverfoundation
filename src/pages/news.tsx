@@ -12,8 +12,8 @@ import Footer from "../components/Footer"
 import Section from "../components/Section"
 
 const nameSort = (a: string, b: string): number => {
-    const aLastName = a.split(" ")[1];
-    const bLastName = b.split(" ")[1];
+    const aLastName = a.split(" ").pop() || '';
+    const bLastName = b.split(" ").pop() || '';
     return aLastName.localeCompare(bLastName);
 }
 
@@ -638,6 +638,11 @@ const MarginedHeader = styled.h3`
     margin-top: 56px;
 `
 
+const PRParagraph = styled.p`
+    margin-top: 4px;
+    margin-bottom: 3px;
+`
+
 const renewalProcess = () => {
     return (
         <BreakpointProvider value={'large'}>
@@ -653,11 +658,16 @@ const renewalProcess = () => {
                 <Anchor id="pressReleases"/>
                 <Section>
                     <h3>Press Releases</h3>
-                    <p>
+                    <PRParagraph>
+                        <a href="https://www.prnewswire.com/news-releases/dover-announces-winners-of-the-2023-scholarship-program-301802055.html?tc=eml_cleartime" target="_blank">
+                            Dover announces 2023 winners
+                        </a>
+                    </PRParagraph>
+                    <PRParagraph>
                         <a href="https://www.prnewswire.com/news-releases/dover-announces-the-2022-dover-scholarship-winners-and-expands-program-301535718.html?tc=eml_cleartime" target="_blank">
                             Dover announces 2022 winners and expands the scholarship program.
                         </a>
-                    </p>
+                    </PRParagraph>
                 </Section>
                 <Anchor id="collegesAttended"/>
                 <Section>
