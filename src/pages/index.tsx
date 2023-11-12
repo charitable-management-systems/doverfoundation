@@ -114,7 +114,7 @@ const IndexPage = () => {
               />
             </HeroImage>
             <HeroText>
-              Now in its twelfth year, The Dover Scholars Program has awarded 403 scholarships valued at nearly $3 million in financial support.
+              Now in its 13th year, The Dover Scholars Program has awarded 403 scholarships valued at nearly $3 million in financial support.
             </HeroText>
           </Hero>
           <Sections>
