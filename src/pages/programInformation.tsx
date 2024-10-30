@@ -53,12 +53,12 @@ const programInformation = () => {
                 <Section>
                     <h3>Eligibility</h3>
                     <ul>
-                        <li>One key modification this year is that we are expanding the overall number of eligible participants to include the children of participants in Dover's LTIP program.</li>
+                        <li>We will continue to offer an expanded program that includes the children of participants in Dover’s LTIP program.</li>
                         <li>Children of Dover's Senior Leaders who are subject to Shareholding Guidelines remain ineligible.</li>
                         <li>
                             Further:
                             <ul>
-                                <li>The applicant's parent, stepparent or legal guardian must be employed as a full-time employee of Dover Corporation, or one of its operating companies world-wide on February 21, 2024 and who has worked for Dover for at least one year of continuous service in the previous five years.</li>
+                                <li>The applicant's parent, stepparent or legal guardian must be employed as a full-time employee of Dover Corporation, or one of its operating companies world-wide on February 22, 2025 and who has worked for Dover for at least one year of continuous service in the previous five years.</li>
                                 <li>Employees and spouses of employees are not eligible.</li>
                             </ul>
                         </li>
@@ -72,7 +72,7 @@ const programInformation = () => {
                                     academic achievement through test scores or other academic records.</li>
                             </ul>
                         </li>
-                        <li> Eligible applicants must be 24 years of age or younger (exception for military duty) as of February 21, 2024.</li>
+                        <li> Eligible applicants must be 24 years of age or younger (exception for military duty) as of February 22, 2025.</li>
                     </ul>
                 </Section>
                 <Anchor id="rules"/>
@@ -82,7 +82,7 @@ const programInformation = () => {
                         <li>Completing this application does not guarantee that you will receive the scholarship.</li>
                         <li>Scholarships are for undergraduate studies only and will not extend beyond the year in which an undergraduate/baccalaureate degree is earned.</li>
                         <li>The Dover Scholars Program reserves the right to define undergraduate education as the first eight semesters of post-secondary education prior to earning a degree.</li>
-                        <li>Awardees must be enrolled as full-time college students at an accredited/recognized institution for the fall of 2024 to receive a scholarship payment.</li>
+                        <li>Awardees must be enrolled as full-time college students at an accredited/recognized institution for the fall of 2025 to receive a scholarship payment.</li>
 
                         <li>The maximum scholarship to be received in any academic year is $3,000.</li>
                         <li>The funds provided must be used only for educational expenses (e.g., tuition, books and fees).</li>
@@ -107,17 +107,17 @@ const programInformation = () => {
                         <li>No preference is accorded to an applicant by reason of a parent's position or length of employment.</li>
                         <li>Consideration for all awards is based on the applicant's academic record, activities and leadership abilities. Extra consideration is given
                             to applicants pursuing science, technology, engineering or mathematics (STEM) fields of study.</li>
-                        <li>All scholarship winners will be individually notified by email of the committee's decision no later than April 29, 2024. Winners will be
-                            posted on the website by May 6, 2024.</li>
+                        <li>All scholarship winners will be individually notified by email of the committee's decision no later than April 29, 2025. Winners will be
+                            posted on the website by May 6, 2025.</li>
                             <Anchor  id="applicationProcess"/>
                     </ul>
                 </Section>
                 <Section>
                     <h3>Application Process</h3>
                     <ul>
-                        <li>The online application will be available beginning November 15, 2023 through February 21, 2024.</li>
+                        <li>The online application will be available beginning November 19, 2024 through February 22, 2025.</li>
                         <li>
-                            A complete application, in English, must be submitted by February 21, 2024 and include:
+                            A complete application, in English, must be submitted by February 22, 2025 and include:
                             <ul>
                                 <li>the online application</li>
                                 <li><a href="../../pdf/Employee_Verification_Form.pdf">employment verification form</a></li>

@@ -137,6 +137,41 @@ const schools = [
 
 const awardees = [
     {
+        year: 2024,
+        names: [
+            'Isabel Boksa',
+            'Emma Jacobson',
+            'Alexandra Pearson',
+            'Addison Bristle',
+            'Omar Jamoussi',
+            'Rohin Rajesh',
+            'Brylee Buchanan',
+            'Saesha Kheni',
+            'Julia Reinhardt',
+            'Gavin Chernesky',
+            'Jack Lewis',
+            'Aubrey Ross',
+            'Mathias De Bergé',
+            'Giselle Lobillo',
+            'Broden Seaton',
+            'Tyler Edberg',
+            'Maxwell McDonald',
+            'Aaron Siebert',
+            'Karli Feusse',
+            'Lainey McGehee',
+            'Megan Sprague',
+            'Arianna Flynn',
+            'Jordan Nealy',
+            'Zack Theberge',
+            'Harrison Gilbert',
+            'Mokshada Nehete',
+            'Nami Unzicker',
+            'Hannah Grey',
+            'Aarush Patnala',
+            'Lee Xian'
+        ]
+    },
+    {
         year: 2023,
         names: [
             "Aaesha Alkhalili",
@@ -623,7 +658,7 @@ const Hero = styled.div`
   position: relative;
 `
 
-const Grid = styled.div<{total: number}>`
+const Grid = styled.div<{ total: number }>`
     display: grid;
 	grid-auto-flow: column;
 	grid-gap: 1px;
@@ -655,7 +690,7 @@ const renewalProcess = () => {
                         layout="fullWidth"
                     />
                 </Hero>
-                <Anchor id="pressReleases"/>
+                <Anchor id="pressReleases" />
                 <Section>
                     <h3>Press Releases</h3>
                     <PRParagraph>
@@ -669,7 +704,7 @@ const renewalProcess = () => {
                         </a>
                     </PRParagraph>
                 </Section>
-                <Anchor id="collegesAttended"/>
+                <Anchor id="collegesAttended" />
                 <Section>
                     <h2>Scholarship recipients are pursuing many different areas of study at a variety of schools around the world.</h2>
                     <MarginedHeader>Recent Schools</MarginedHeader>
@@ -678,19 +713,19 @@ const renewalProcess = () => {
                             <div>{school}</div>
                         ))}
                     </Grid>
-                    <Anchor id="recentMajors"/>
+                    <Anchor id="recentMajors" />
                     <MarginedHeader>Recent Majors</MarginedHeader>
-                    <Grid total={majors.length}>                    
+                    <Grid total={majors.length}>
                         {
                             majors.sort().map(major => (
                                 <div>{major}</div>
                             ))
                         }
                     </Grid>
-                    <Anchor id="awardees"/>
+                    <Anchor id="awardees" />
                     <MarginedHeader>Recent Awardees</MarginedHeader>
                     {
-                        awardees.map(({year, names}) => (
+                        awardees.map(({ year, names }) => (
                             <>
                                 <h4>The {names.length} recipients from the spring of {year}</h4>
                                 <Grid total={names.length}>
