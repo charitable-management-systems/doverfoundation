@@ -8,6 +8,7 @@ import "../styles/reset.css"
 import "../styles/index.css"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
+import { Seo } from "../components/GTag"
 
 const HeroText = styled.div`
   position: absolute;
@@ -97,4 +98,8 @@ const Privacy = () => {
 
 export default Privacy
 
-export const Head: HeadFC = () => <title>Privacy Policy</title>
+export const Head = () => (
+  <Seo>
+    <title>Dover Foundation - Privacy Policy</title>
+  </Seo>
+)

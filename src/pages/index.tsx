@@ -1,13 +1,14 @@
 import * as React from "react"
 import "../styles/reset.css"
 import "../styles/index.css"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import BreakpointProvider from "../providers/BreakpointProvider"
 import { Header } from "../components/Header"
 import { StaticImage } from "gatsby-plugin-image"
 import { Main } from "../components/Main"
 import { Link, HeadFC } from "gatsby"
 import Footer from "../components/Footer"
+import { Seo } from "../components/GTag"
 
 const doverBlue = 'rgb(0, 75, 141)'
 
@@ -100,6 +101,12 @@ const StyledMain = styled(Main)`
   background-color: white;
 `
 
+export const Head = () => (
+  <Seo>
+    <title>Dover Foundation</title>
+  </Seo>
+)
+
 const IndexPage = () => {
   return (
     <>
@@ -114,7 +121,7 @@ const IndexPage = () => {
               />
             </HeroImage>
             <HeroText>
-              Now in its 14th year, The Dover Scholars Program has awarded 403 scholarships valued at nearly $3 million in financial support.
+              Now in its 14th year, The Dover Scholars Program has awarded 433 scholarships valued at nearly $3.2 million in financial support.
             </HeroText>
           </Hero>
           <Sections>
@@ -137,5 +144,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-export const Head: HeadFC = () => <title>Dover Foundation</title>

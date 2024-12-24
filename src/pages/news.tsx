@@ -10,6 +10,7 @@ import "../styles/reset.css"
 import "../styles/index.css"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
+import { Seo } from "../components/GTag"
 
 const nameSort = (a: string, b: string): number => {
     const aLastName = a.split(" ").pop() || '';
@@ -750,4 +751,8 @@ const renewalProcess = () => {
 
 export default renewalProcess
 
-export const Head: HeadFC = () => <title>News</title>
+export const Head = () => (
+    <Seo>
+      <title>Dover Foundation - News</title>
+    </Seo>
+  )

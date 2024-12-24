@@ -8,6 +8,7 @@ import "../styles/reset.css"
 import "../styles/index.css"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
+import { Seo } from "../components/GTag"
 
 const HeroText = styled.div`
   position: absolute;
@@ -63,4 +64,8 @@ const terms = () => {
 
 export default terms
 
-export const Head: HeadFC = () => <title>Terms of Use</title>
+export const Head = () => (
+  <Seo>
+      <title>Dover Foundation - Terms of Use</title>
+  </Seo>
+)

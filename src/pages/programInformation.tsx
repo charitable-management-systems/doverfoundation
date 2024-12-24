@@ -10,6 +10,7 @@ import "../styles/index.css"
 import Footer from "../components/Footer"
 import { Anchor } from "../components/Anchor"
 import Section from "../components/Section"
+import { Seo } from "../components/GTag"
 
 
 const HeroText = styled.div`
@@ -150,4 +151,8 @@ const programInformation = () => {
 
 export default programInformation
 
-export const Head: HeadFC = () => <title>Program Information</title>
+export const Head = () => (
+    <Seo>
+        <title>Dover Foundation - Program Information</title>
+    </Seo>
+)

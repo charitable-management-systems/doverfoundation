@@ -9,6 +9,7 @@ import "../styles/reset.css"
 import "../styles/index.css"
 import Footer from "../components/Footer"
 import Section from "../components/Section"
+import { Seo } from "../components/GTag"
 
 const HeroText = styled.div`
   position: absolute;
@@ -71,4 +72,8 @@ const renewalProcess = () => {
 
 export default renewalProcess
 
-export const Head: HeadFC = () => <title>Renewal Process</title>
+export const Head = () => (
+  <Seo>
+      <title>Dover Foundation - Renewal Process</title>
+  </Seo>
+)
