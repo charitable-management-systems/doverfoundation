@@ -138,6 +138,42 @@ const schools = [
 
 const awardees = [
     {
+        year: 2025,
+        names: [
+            "Eesha Agrahar",
+            "Laura Dondarini",
+            "Michael Meng",
+            "Tanner Back",
+            "John Downs",
+            "Alexandra Nguyen",
+            "Harry Beech",
+            "Angela Greene",
+            "Melanie Reyes",
+            "Dharun Bhalagi",
+            "Shania Hamm",
+            "Eli Reynolds",
+            "Evan Burlaca",
+            "Robert He",
+            "Alyssa Schiavone",
+            "Yangyang Cao",
+            "Reilly Hiner",
+            "Sara Stimpson",
+            "Mildred Curtindale",
+            "Angèle Hug",
+            "Emma Sullivan",
+            "Diego Davila",
+            "Andrew Hutchinson",
+            "Sahana Thasma",
+            "Kendra Denhof",
+            "Anushri Katu",
+            "Ethan Vu",
+            "Davis Dixon",
+            "Romain Martin",
+            "Jack Wang",
+            "Lin Xi",
+        ],
+    },
+    {
         year: 2024,
         names: [
             'Isabel Boksa',
@@ -695,6 +731,11 @@ const renewalProcess = () => {
                 <Section>
                     <h3>Press Releases</h3>
                     <PRParagraph>
+                        <a href="https://www.prnewswire.com/news-releases/dover-announces-2025-scholarship-program-winners-302431785.html" target="_blank">
+                            Dover announces 2025 winners
+                        </a>
+                    </PRParagraph>
+                    <PRParagraph>
                         <a href="https://www.prnewswire.com/news-releases/dover-announces-winners-of-the-2024-scholarship-program-302119849.html?tc=eml_clearti" target="_blank">
                             Dover announces 2024 winners
                         </a>
@@ -753,6 +794,6 @@ export default renewalProcess
 
 export const Head = () => (
     <Seo>
-      <title>Dover Foundation - News</title>
+        <title>Dover Foundation - News</title>
     </Seo>
-  )
+)

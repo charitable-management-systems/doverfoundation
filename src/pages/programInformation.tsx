@@ -54,12 +54,12 @@ const programInformation = () => {
                 <Section>
                     <h3>Eligibility</h3>
                     <ul>
-                        <li>We will continue to offer an expanded program that includes the children of participants in Dover’s LTIP program.</li>
+                        <li>We will continue to offer an expanded program that includes the children of participants in Dover's LTIP program.</li>
                         <li>Children of Dover's Senior Leaders who are subject to Shareholding Guidelines remain ineligible.</li>
                         <li>
                             Further:
                             <ul>
-                                <li>The applicant's parent, stepparent or legal guardian must be employed as a full-time employee of Dover Corporation, or one of its operating companies world-wide on February 24, 2025 and who has worked for Dover for at least one year of continuous service in the previous five years.</li>
+                                <li>The applicant's parent, stepparent or legal guardian must be employed as a full-time employee of Dover Corporation, or one of its operating companies world-wide on February 23, 2026 and who has worked for Dover for at least one year of continuous service in the previous five years.</li>
                                 <li>Employees and spouses of employees are not eligible.</li>
                             </ul>
                         </li>
@@ -73,7 +73,7 @@ const programInformation = () => {
                                     academic achievement through test scores or other academic records.</li>
                             </ul>
                         </li>
-                        <li> Eligible applicants must be 24 years of age or younger (exception for military duty) as of February 24, 2025.</li>
+                        <li> Eligible applicants must be 24 years of age or younger (exception for military duty) as of February 23, 2026.</li>
                     </ul>
                 </Section>
                 <Anchor id="rules"/>
@@ -116,9 +116,9 @@ const programInformation = () => {
                 <Section>
                     <h3>Application Process</h3>
                     <ul>
-                        <li>The online application will be available beginning November 19, 2024 through February 24, 2025.</li>
+                        <li>The online application will be available beginning November 19, 2025 through February 23, 2026.</li>
                         <li>
-                            A complete application, in English, must be submitted by February 24, 2025 and include:
+                            A complete application, in English, must be submitted by February 23, 2026 and include:
                             <ul>
                                 <li>the online application</li>
                                 <li><a href="../../pdf/Employee_Verification_Form.pdf">employment verification form</a></li>
