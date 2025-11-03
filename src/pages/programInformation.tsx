@@ -83,7 +83,7 @@ const programInformation = () => {
                         <li>Completing this application does not guarantee that you will receive the scholarship.</li>
                         <li>Scholarships are for undergraduate studies only and will not extend beyond the year in which an undergraduate/baccalaureate degree is earned.</li>
                         <li>The Dover Scholars Program reserves the right to define undergraduate education as the first eight semesters of post-secondary education prior to earning a degree.</li>
-                        <li>Awardees must be enrolled as full-time college students at an accredited/recognized institution for the fall of 2025 to receive a scholarship payment.</li>
+                        <li>Awardees must be enrolled as full-time college students at an accredited/recognized institution for the fall of 2026 to receive a scholarship payment.</li>
 
                         <li>The maximum scholarship to be received in any academic year is $3,000.</li>
                         <li>The funds provided must be used only for educational expenses (e.g., tuition, books and fees).</li>
@@ -108,8 +108,8 @@ const programInformation = () => {
                         <li>No preference is accorded to an applicant by reason of a parent's position or length of employment.</li>
                         <li>Consideration for all awards is based on the applicant's academic record, activities and leadership abilities. Extra consideration is given
                             to applicants pursuing science, technology, engineering or mathematics (STEM) fields of study.</li>
-                        <li>All scholarship winners will be individually notified by email of the committee's decision no later than April 29, 2025. Winners will be
-                            posted on the website by May 6, 2025.</li>
+                        <li>All scholarship winners will be individually notified by email of the committee's decision no later than April 30, 2026. Winners will be
+                            posted on the website by May 7, 2026.</li>
                             <Anchor  id="applicationProcess"/>
                     </ul>
                 </Section>
