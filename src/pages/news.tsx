@@ -138,6 +138,42 @@ const schools = [
 
 const awardees = [
     {
+        year: 2026,
+        names: [
+          "Natalie Arwine",
+          "Sarah Heon",
+          "Addison Sayyae",
+          "Ainsley Battle",
+          "Sarah Hussain",
+          "Leo Shi",
+          "Alessandra Bonev",
+          "My-Vi Huynh",
+          "Artem Shulga",
+          "Gabriella Bonev",
+          "Mohamed Amine Jamoussi",
+          "Kayla Sullivan",
+          "Sydnee Breeding",
+          "Kyle Le",
+          "Bess Tan",
+          "Benjamin Brown",
+          "Kyra Liu",
+          "Khaily Thach",
+          "Mandi Cong",
+          "Vishveshwara Mathkunti",
+          "Maycee Tickle",
+          "Connor Crawford",
+          "Riann Myers",
+          "Oliver Ulanski",
+          "Garrett Densford",
+          "Julia Pearce",
+          "Payton Whipple",
+          "Daniel Frank",
+          "Joseph Puente",
+          "Conor Wilson",
+          "Scott Xu"
+        ],
+    },
+    {
         year: 2025,
         names: [
             "Eesha Agrahar",

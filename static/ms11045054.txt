@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "doverfoundation.org",
+  "Id": "f0388b52-9a27-4a35-a01f-d25cda06f586"
+}

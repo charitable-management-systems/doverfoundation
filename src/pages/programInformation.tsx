@@ -59,7 +59,7 @@ const programInformation = () => {
                         <li>
                             Further:
                             <ul>
-                                <li>The applicant's parent, stepparent or legal guardian must be employed as a full-time employee of Dover Corporation, or one of its operating companies world-wide on February 23, 2026 and who has worked for Dover for at least one year of continuous service in the previous five years.</li>
+                                <li>The applicant's parent, stepparent or legal guardian must be employed as a full-time employee of Dover Corporation, or one of its operating companies world-wide on February 22, 2027 and who has worked for Dover for at least one year of continuous service in the previous five years.</li>
                                 <li>Employees and spouses of employees are not eligible.</li>
                             </ul>
                         </li>
@@ -73,7 +73,7 @@ const programInformation = () => {
                                     academic achievement through test scores or other academic records.</li>
                             </ul>
                         </li>
-                        <li> Eligible applicants must be 24 years of age or younger (exception for military duty) as of February 23, 2026.</li>
+                        <li> Eligible applicants must be 24 years of age or younger (exception for military duty) as of February 22, 2027.</li>
                     </ul>
                 </Section>
                 <Anchor id="rules"/>
@@ -83,7 +83,7 @@ const programInformation = () => {
                         <li>Completing this application does not guarantee that you will receive the scholarship.</li>
                         <li>Scholarships are for undergraduate studies only and will not extend beyond the year in which an undergraduate/baccalaureate degree is earned.</li>
                         <li>The Dover Scholars Program reserves the right to define undergraduate education as the first eight semesters of post-secondary education prior to earning a degree.</li>
-                        <li>Awardees must be enrolled as full-time college students at an accredited/recognized institution for the fall of 2026 to receive a scholarship payment.</li>
+                        <li>Awardees must be enrolled as full-time college students at an accredited/recognized institution for the fall of 2027 to receive a scholarship payment.</li>
 
                         <li>The maximum scholarship to be received in any academic year is $3,000.</li>
                         <li>The funds provided must be used only for educational expenses (e.g., tuition, books and fees).</li>
@@ -108,17 +108,17 @@ const programInformation = () => {
                         <li>No preference is accorded to an applicant by reason of a parent's position or length of employment.</li>
                         <li>Consideration for all awards is based on the applicant's academic record, activities and leadership abilities. Extra consideration is given
                             to applicants pursuing science, technology, engineering or mathematics (STEM) fields of study.</li>
-                        <li>All scholarship winners will be individually notified by email of the committee's decision no later than April 30, 2026. Winners will be
-                            posted on the website by May 7, 2026.</li>
+                        <li>All scholarship winners will be individually notified by email of the committee's decision no later than April 30, 2027. Winners will be
+                            posted on the website by May 7, 2027.</li>
                             <Anchor  id="applicationProcess"/>
                     </ul>
                 </Section>
                 <Section>
                     <h3>Application Process</h3>
                     <ul>
-                        <li>The online application will be available beginning November 19, 2025 through February 23, 2026.</li>
+                        <li>The online application will be available beginning November 19, 2026 through February 22, 2027.</li>
                         <li>
-                            A complete application, in English, must be submitted by February 23, 2026 and include:
+                            A complete application, in English, must be submitted by February 22, 2027 and include:
                             <ul>
                                 <li>the online application</li>
                                 <li><a href="../../pdf/Employee_Verification_Form.pdf">employment verification form</a></li>
