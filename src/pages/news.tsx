@@ -767,6 +767,11 @@ const renewalProcess = () => {
                 <Section>
                     <h3>Press Releases</h3>
                     <PRParagraph>
+                        <a href="https://www.prnewswire.com/news-releases/dover-announces-2026-scholarship-program-winners-302779304.html" target="_blank">
+                            Dover announces 2026 winners
+                        </a>
+                    </PRParagraph>
+                    <PRParagraph>
                         <a href="https://www.prnewswire.com/news-releases/dover-announces-2025-scholarship-program-winners-302431785.html" target="_blank">
                             Dover announces 2025 winners
                         </a>
