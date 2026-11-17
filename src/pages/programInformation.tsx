@@ -139,7 +139,7 @@ const programInformation = () => {
                         630-428-2412<br/>
                         Dover Scholars Program<br/>
                         PO Box 648<br/>
-                        Naperville, IL 60565<br/>
+                        Naperville, IL 60566<br/>
                         USA
                     </p>
                 </Section>
