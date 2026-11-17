@@ -116,7 +116,7 @@ const programInformation = () => {
                 <Section>
                     <h3>Application Process</h3>
                     <ul>
-                        <li>The online application will be available beginning November 19, 2026 through February 22, 2027.</li>
+                        <li>The online application will be available beginning November 18, 2026 through February 22, 2027.</li>
                         <li>
                             A complete application, in English, must be submitted by February 22, 2027 and include:
                             <ul>
